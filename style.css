@@ -1,0 +1,179 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(242, 244, 246);
+}
+.navbar {
+    display: flex;
+    background-color: rgb(164, 201, 233);
+    position: sticky;
+
+}
+
+.nav-list {
+    color: black;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-list img {
+    border-radius: 62px;
+    width: 80px;
+    height: 80px;
+}
+
+.nav-list li {
+    list-style: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 1px 22px;
+    margin: 10px;
+
+}
+.nav-list li a{
+    text-decoration: none;
+    color:rgb(19, 15, 15)
+}
+.nav-list li a:hover{
+    color: rgb(10, 10, 10);
+}
+.nav-list li:hover {
+    background-color: rgb(93, 154, 239);
+    border-radius: 12px;
+}
+#login-btn{
+    margin: 14px 30px;
+    padding: 4px 21px;
+    border-radius: 15px;
+    background-color: rgb(164, 201, 233);
+    border: none;
+}
+#login-btn:hover{
+    background-color: rgb(164, 201, 233);
+}
+#login-btn a{
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+
+#home-section{
+    width: 100%;
+    height: 700px;
+    background-color: rgb(248, 237, 237);
+}
+#home-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+  color: #4c3e3e;
+}
+#home-content h1{
+  margin-top: 80px;
+}
+#home-content h3{
+  margin: 20px 0px;
+}
+#home-btn{
+  margin-top: 50px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-size: 18px;
+  background-color:rgb(164, 201, 233);
+  color:white;
+  border: none;
+  
+}
+#home-btn:hover{
+  cursor: pointer;
+  background-color:rgb(147, 202, 251);
+  border: 1px solid white;
+}
+#diff-gen{
+  display: flex;
+  width: 80%;
+  height: 30%;
+}
+.gen-collection{
+  width: 20%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px 5px;
+  border-radius: 10px;
+}
+#gen-1{
+  background: url(/content/comic-main.avif) no-repeat center center/cover;
+}
+#gen-2{
+    background: url(/content/romantic.avif) no-repeat center center/cover;
+}
+#gen-3{
+    background: url(/content/adventure-main.avif) no-repeat center center/cover;
+}
+#gen-4{
+    background: url(/content/sci-fi-main.jpg) no-repeat center center/cover;
+}
+#gen-5{
+    background: url(/content/horror-main.jpg) no-repeat center center/cover;
+}
+.popup-box{
+	display: none;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	top: 0;
+	left: 0;
+}
+
+.popup-inner{
+	max-width: 300px;
+	min-height: 160px;
+	background: white;
+  border-radius: 25px;
+	padding: 15px;
+	margin: auto;
+	top: 25%;
+	position: relative;
+}
+
+
+
+.popup-msg{
+	font-weight: bold;
+	color: black;
+	padding: 20px 20px 0 20px;
+}
+
+.next-step-btn{
+	margin:20px auto 0;
+background: linear-gradient(rgb(204,0,0), rgb(130,0,0));
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#015eab', endColorstr='#10276b');
+	border: none !important;
+	padding: 10px 40px !important;
+	color: #fff !important;
+	font-weight: bold;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.transparent-layer{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	opacity: 0.3;
+overflow: hidden;
+
+}
